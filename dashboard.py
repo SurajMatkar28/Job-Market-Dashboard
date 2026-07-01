@@ -50,8 +50,23 @@ st.subheader("Work Type Distribution")
 
 work=(df["formatted_work_type"].value_counts())
 
-fig,ax=plt.subplots(figsize=(12,6))
-squarify.plot(sizes=work.values,label=work.index,alpha=0.8)
+st.subheader(
+    "Work Type Distribution"
+)
+
+fig, ax = plt.subplots(
+    figsize=(8,6)
+)
+
+ax.bar(
+    work.index,
+    work.values
+)
+
+plt.xticks(
+    rotation=45
+)
+
 st.pyplot(fig)
 
 #Salary Distribution
