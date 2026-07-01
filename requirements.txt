@@ -3,6 +3,3 @@ pandas
 matplotlib
 numpy
 squarify
-
-To install type the following in terminal:
-pip install -r requirements.txt
